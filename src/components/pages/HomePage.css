@@ -1,0 +1,18 @@
+.social::after{
+    content: "";
+    width: 1px;
+    height: 300px;
+    background-color: goldenrod;
+}
+
+.mail{
+    writing-mode: vertical-rl;
+}
+
+.mail::after{
+    content: "";
+    width: 1px;
+    height: 300px;
+    background:url(/public/image/Frame1.png);
+    margin-right: 5px;
+}

@@ -14,10 +14,6 @@ const Work=()=>{
             <Leftwork Projecttitle="" Projectdesc="" Projectfeature1="" Projectfeature2="" Projectfeature3=""/>
             <Rightwork Projecttitle="" Projectdesc="" Projectfeature1="" Projectfeature2="" Projectfeature3=""/>
 
-
-
-
-
           <Footer/>
           <Copyright/>
           <Fixednav/>  

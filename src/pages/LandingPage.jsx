@@ -10,6 +10,9 @@ import project2 from '../assets/Images/LMS.png';
 import project3 from '../assets/Images/FoodPlanet.png';
 import Clients from '../components/Cards/Clients';
 import client1 from '../assets/Images/ceo.jpeg';
+import bg from '../assets/Images/office.jpg';
+import Footer from '../components/footer/Footer';
+import logo from '../assets/Images/microsun.png';
 
 
 
@@ -20,6 +23,39 @@ const LandingPage=()=>{
             transition={{duration:1.5, ease:easeOut}}
             className='w-screen bg-black flex flex-col items-center'>
                 <Header/>
+                <div className='w-full h-screen flex flex-col px-16 '>
+                    <div className='flex flex-row items-center mt-24 justify-between'>
+                        <h1 className='text-6xl w-3/5'>Color Digitally with imagination Palette</h1>
+                        <p className='w-2/6'>We are digital magicians, turning ideas into compelling designs, driving change and creating real impact.</p>
+                    </div>
+                    <div className=' flex flex-row items-center mt-10 gap-10'>
+                        <div className='w-1/6 flex flex-col gap-7 mt-10'>
+                                <div className='bg-[#18181b] rounded-md p-4'>
+                                    <p className='text-xl font-semibold'>500+</p>
+                                    <p>Happy Clients</p>
+                                </div>
+                                <div className='bg-[#18181b] rounded-md p-4'>
+                                    <p>200+</p>
+                                    <p>Projects</p>
+                                </div>
+                                <div className='bg-[#18181b] rounded-md p-4'>
+                                    <p>12yrs+</p>
+                                    <p>Experience</p>
+                                </div>
+                        </div>
+                        <div className='w-5/6 flex flex-row  gap-4 items-baseline bg-white h-[40vh]'>
+                                <img className='w-[10rem]' src={logo} alt="" />
+                                <div>
+                                    <p>We are based in</p>
+                                    <p>New Delhi, India</p>
+                                </div>
+                                <div>
+                                    <p>Let's talk</p>
+                                    <p>microsun@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 {/* Services */}
                 <div className='w-[90vw] bg-[#18181b] flex flex-col rounded-lg p-5 mt-[4.5rem] ' >
                     <p className='border-2 border-[var(--primary-color)] text-[var(--primary-color)] w-[8rem] rounded-xl items-center justify-center flex'>OUR SERVICES</p>
@@ -50,14 +86,23 @@ const LandingPage=()=>{
                     <button className='flex items-center justify-center w-28 border border-[var(--primary-color)] text-[var(--primary-color)] rounded-full px-4 py-2  font-semibold'>Testimonials</button>
                     <h3 className='text-4xl font-semibold rounded-xl items-center justify-center flex'>What our clients are saying</h3>
                     <p className=' max-w-4xl text-xl text-center'>This testimonial is a motivation for us to continue to improve quality and provide better satisfaction to every customer who entrusts us.</p>
-                    <div className='carousel w-full  gap-10'>
+                    <div className='carousel w-[68vw]  gap-10'>
                         <Clients title={"Client 1"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor."} image={client1}/>
                         <Clients title={"Client 2"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor."} image={star}/>
-                        {/* <Clients title={"Client 3"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor."} image={star}/> */}
-                        {/* <Clients title={"Client 4"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor."} image={star}/> */}
-                        {/* <Clients title={"Client 5"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor."} image={star}/> */}
+                        <Clients title={"Client 3"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor."} image={star}/>
+                        <Clients title={"Client 4"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor."} image={star}/>
+                        <Clients title={"Client 5"} content={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor."} image={star}/>
                        </div>
                 </div>
+                {/* Contact us */}
+                <div className='w-[90vw] flex flex-col rounded-lg p-5 mt-[4.5rem] items-center gap-4' style={{backgroundImage:`url(${bg})`,backgroundSize:"cover",backgroundPosition:"center",}}>
+                <p className='border-2 border-[var(--primary-color)] text-[var(--primary-color)] w-[8rem] rounded-xl items-center justify-center flex'>OUR SERVICES</p>
+                <h3 className=' text-6xl'>Ready To Talk</h3>
+                <p className='text-center text-sm w-3/6'>Feel free to contact us right now. we are pleased to announce our readiness to recive contacts from potential clients.</p>
+                <button className='w-28 border border-[var(--primary-color)] text-[var(--primary-color)] rounded-full px-4 py-2  font-semibold'>Let's Talk</button>
+                </div>
+                {/* footer */}
+                <Footer/>
             </m.div> 
     )
 }

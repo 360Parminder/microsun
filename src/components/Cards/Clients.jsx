@@ -8,15 +8,17 @@ const Clients=({image,title,content})=>{
           <img className="w-12 h-12 rounded-full" src={image} alt="Image for the content" />
            <div className="flex flex-col">
            <p className=" text-xl font-semibold">{title}</p>
-           <p>sdhjvskvs</p>
+           <p>founder of microsun</p>
            </div>
           </div>
-           <p className=" ">{content}</p>
-            <div className="flex flex-row justify-between items-center">
+           <p className="mt-4 border-b-[0.5px] pb-3 ">{content}</p>
+            <div className="flex flex-row justify-between items-center mt-2">
                 <p>10:00 AM Jun 23, 2022</p>
-                <div>
+                <div className="flex flex-row gap-1">
                     <IonIcon icon={star} className="text-yellow-500"/>
                     <IonIcon icon={star} className="text-yellow-500"/>
+                    <IonIcon icon={star} className="text-yellow-500"/>  
+                    <IonIcon icon={star} className="text-yellow-500"/>  
                     <IonIcon icon={star} className="text-yellow-500"/>  
 
                 </div>

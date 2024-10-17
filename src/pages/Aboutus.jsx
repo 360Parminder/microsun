@@ -1,23 +1,20 @@
 
 import {Link} from 'react-router-dom';
-import Fixednav from '../nav/Fixednav';
-import Footer from '../footer/Footer';
-import Copyright from '../footer/Copyright';
+import ceo from '../assets/Images/ceo.jpeg';
 
 const Aboutus=()=>{
 
     return(
         <>
-        <div className='flex flex-col w-screen items-center bg-fixed text-slate-800 '>
-
-            <div className='flex flex-col mt-10 mb-36 gap-4 max-w-4xl text-cyan-50'>
-                <h2 className="text-5xl sm:text-7xl md:text-9xl font-bold md:mt-5 text-center text-transparent bg-clip-text bg-cover " style={{ backgroundImage: "url('image/mesh1.png')" }}>ABOUT US</h2>
+        <div className='flex flex-col w-screen  items-center bg-[var(--background-color)] '>
+            <div className='flex flex-col mt-10 mb-36 gap-4 max-w-4xl'>
+                <h2 className='text-5xl sm:text-7xl md:text-9xl font-bold md:mt-5 text-center'>ABOUT US</h2>
                 {/* <h3 className='text-2xl font-semi-bold mt-10'>Where skills meet opportunity on a global scale.</h3> */}
                 <div className='flex items-center gap-8 md:mt-20' >
-                    <img className='rounded-full w-24 h-24' src="/image/ceo.jpeg" alt="" />
+                    <img className='rounded-full w-24 h-24' src={ceo} alt="" />
                     <div>
-                    <h5 className='text-3xl font-bold text-white'>Nitin Gandhi</h5>
-                    <p className='font-bold text-white' >Director</p>
+                    <h5 className='text-3xl font-bold '>Nitin Gandhi</h5>
+                    <p className='font-bold '>Director</p>
                     </div>
                     
                 </div>
@@ -61,11 +58,6 @@ const Aboutus=()=>{
           
           
             </div>
-
-            <Footer/>
-            <Copyright/>
-
-        <Fixednav page="About"/>
         </div>
         
         </>
